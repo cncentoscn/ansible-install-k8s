@@ -1,5 +1,5 @@
 # 安装目录 
-software_dir: '/root/binary_pkg'
+software_dir: '/root/www.centoscn.vip'
 k8s_work_dir: '/opt/kubernetes'
 etcd_work_dir: '/opt/etcd'
 tmp_dir: '/tmp/k8s'
