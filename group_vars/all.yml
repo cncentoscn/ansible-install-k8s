@@ -11,6 +11,10 @@ pod_cidr: '10.244.0.0/16' # 与roles/addons/files/kube-flannel.yaml中网段一�
 service_nodeport_range: '30000-32767'
 cluster_domain: 'cluster.local'
 
+# 高可用，如果部署单Master，该项忽略
+vip: '192.168.31.88'
+nic: 'ens33' 
+
 # 自签证书可信任IP列表，为方便扩展，可添加多个预留IP
 cert_hosts:
   # 包含所有Master IP和service_cidr的第一个IP
