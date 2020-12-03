@@ -1,20 +1,20 @@
 [master]
 # 默认Naster节点也部署Node组件
-192.168.31.61 node_name=k8s-master
+192.168.0.88 node_name=k8s-master
 
 [node]
-192.168.31.72 node_name=k8s-node1
-192.168.31.73 node_name=k8s-node2
+192.168.0.89 node_name=k8s-node1
+192.168.0.90 node_name=k8s-node2
 
 [etcd]
-192.168.31.61 etcd_name=etcd-1
-192.168.31.62 etcd_name=etcd-2
-192.168.31.63 etcd_name=etcd-3
+192.168.0.88 etcd_name=etcd-1
+192.168.0.89 etcd_name=etcd-2
+192.168.0.90 etcd_name=etcd-3
 
 [k8s:children]
 master
 node
 
 [newnode]
-#192.168.31.91 node_name=k8s-node3
+#192.168.0.91 node_name=k8s-node3
 
